@@ -15,4 +15,19 @@ Add-Computer -DomainName ppedv.test -DomainCredential ppedv\Administrator -NewNa
 
 ```powershell
 Rename-Computer -NewName Client1 -DomainCredential ppedv\Administrator
- ```
+```
+```cmd
+ipconfig /flushdns
+```
+```cmd
+ipconfig /displaydns
+```
+```powershell
+Resolve-DnsName -Name Server1
+```
+```powershell
+Get-DnsClientCache
+```
+```powershell
+Clear-DnsClientCache
+```
